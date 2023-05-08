@@ -1,0 +1,33 @@
+{
+  "name": "@a.lupow/typeorm-utils",
+  "version": "0.0.1",
+  "description": "",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest --config=jest.config.json",
+    "lint": "gts lint",
+    "clean": "gts clean",
+    "compile": "tsc",
+    "fix": "gts fix",
+    "prepare": "npm.cmd run compile",
+    "pretest": "npm.cmd run compile",
+    "posttest": "npm.cmd run lint"
+  },
+  "author": "Anthony Lupow",
+  "license": "MIT",
+  "dependencies": {
+    "typeorm": "^0.3.15"
+  },
+  "devDependencies": {
+    "@types/node": "^14.11.2",
+    "@typescript-eslint/eslint-plugin": "^5.59.2",
+    "@typescript-eslint/typescript-estree": "^5.59.2",
+    "eslint": "^8.38.0",
+    "eslint-config-google": "^0.14.0",
+    "eslint-plugin-import": "^2.22.0",
+    "gts": "^3.1.1",
+    "typescript": "~4.7.0"
+  }
+}
